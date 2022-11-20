@@ -1,5 +1,6 @@
 {% extends 'core/base.html' %}
-{% block title %}Lobby{% endblock %}
+{% block title %}Room{% endblock %}
+{% load static %}
 {% block content %}
 <main>
     <section id="room-name-wrapper">
@@ -15,4 +16,6 @@
         
     </section>
 </main>
+<script src="{% static 'js/AgoraRTC_N-4.15.0.js' %}"></script>
+<script src="{% static 'js/stream.js' %}"></script>
 {% endblock %}
